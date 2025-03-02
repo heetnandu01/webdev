@@ -1,0 +1,23 @@
+/* 
+for class we use: for eg .red
+&
+id we # : for eg #firstdiv 
+*/
+
+/*red is a class here and firstdiv is the id here */
+.red{
+    color: red;
+}
+
+.bg-yellow{
+    background-color: lightgreen;
+}
+
+.blue{
+    color: white;
+}
+
+#seconddiv{
+    background-color:black;
+}
+
