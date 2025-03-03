@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+
+        /* div{
+            background-color: red; 
+        } */
+
+        /* class selector */
+
+        /* .blue{
+            background-color: blue;
+        }
+        .yellow{
+            background-color: yellow;
+        } */
+
+        /* id selector */
+
+        #win{
+            background-color: blue;
+        }
+        #lose{
+            background-color: yellow;
+        }
+        
+        /* child selector */
+
+        /* basically in this p should be inside a div and not inside any other tags like article or anything. It should be direct child to that. */
+
+        div > p{
+            color: red;
+            background-color: orchid;
+        }
+
+        /* descendant selector */
+
+        /* basically in this p can be inside a div or any other tags like article or anything. It will apply  the css . */
+        div p{
+            color: red;
+            background-color: orchid;
+        }
+
+        /* universal selector */
+
+        /* basically apply css to every element in this */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+
+        /* this is for visited websites */
+        a:visited{
+            color:red;
+        }
+
+        /* this is for websites which I have not visited */
+        a:link{
+            color: green;
+        }
+
+        /* whenever you will visit a website it the active link background will become red */
+        a:active{
+            background-color: red;
+        }
+
+        /* whenever you will hover through the website it will turn springgreen */
+        a:hover{
+            background-color: springgreen;
+        }
+        
+        p:first-child{
+            background-color: aqua;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- selectors in css : css selectors allow us to choose specific elements
+    and apply styles to them. -->
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="blue" id="win">
+        Golden state warriors
+        <p>I am inside a div</p>
+    </div>
+
+    <div class="yellow" id="lose">
+        loss lakers
+    </div>
+
+    <a target="_blank" href="https:www.google.com">google</a>
+    <a target="_blank" href="https:www.target.com">target</a>
+</body>
+</html>
