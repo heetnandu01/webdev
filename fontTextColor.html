@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+        /* fonts can be directly linked with html */
+        h1{
+            font-family: "Big Shoulders Stencil", sans-serif;
+        }
+        p{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* font-style: italic;
+            font-weight: 500; */
+            /* If you want to underline a text we use text decoration */
+            text-decoration: underline;
+            /* you can also do overline */
+            /* text-decoration: overline; */
+            font-size: larger;
+            /* Line height basically give spaces between paragraphs */
+            line-height: 4;
+        }
+        
+        /* After First rest all the fonts are called fallback fonts */
+        h2{
+            text-align: center;
+            text-decoration: underline;
+            /* text-transform: uppercase; */
+            /* basically makes everything uppercase */
+            /* text-transform:lowercase; */
+            /* basically makes everything lowercase */
+            text-decoration-color: blue;
+            /* text-decoration-style: solid; */
+            text-decoration-thickness: 8px;
+            /* text-indent: 20px; */
+            /* basically python identation in CSS */
+            /* width: 100px; */
+
+        }
+        .lorem{
+            border: 5px solid red;
+            width: 145px;
+            word-break:normal;
+            /* overflow: hidden; */
+            /* text-overflow: ellipsis; */
+            /* basically ellipsis avoid a paragraph go outside the box */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>About Fonts</h2>
+        <p>Video about fonts,colors and text properties</p>
+        <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, dicta! Quia, quod quae repellat sit impedit a quaerat, voluptatum molestiae voluptates, aspernatur nobis suscipit libero debitis repellendus nihil ad? Ad, tempora itaque voluptatibus laboriosam necessitatibus ut veritatis. Laborum iure nemo sapiente facere cum dolore rerum.</p>
+    </div>
+</body>
+</html>
