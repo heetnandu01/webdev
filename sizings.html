@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizings in css - px,rem,em,vh,vw,% and more</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 774px; */
+            width: 80vw;
+            height: 20vh;
+            /* vw - viewport width */
+            margin: auto; 
+            /* margin auto is only applicable to block elements and not inline elements */
+            background-color: aquamarine;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 774px; */
+            width: 80vw;
+            height: 60vh;
+            /* height: 80vh; */
+            margin: 23px  auto; 
+            /* margin auto is only applicable to block elements and not inline elements */
+            font-size: 1em;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+        .container p{
+            /* font-size: 2em; */
+            /* em will make the f0nt size twice than its parent size which is 18px */
+            font-size: 2rem;
+            /*This makes the font size twice the root (html) font size. */
+        }
+        /* In phone vmin is Width
+        and in computer vmin is height.
+        */
+
+        .mycont{
+            background-color: red;
+            color: yellow;
+            font: 12;
+            width: 100vmin;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perferendis provident officia facere, fugiat quod libero doloribus illo? Qui esse repellat quidem, dolore eligendi at.
+       </p>
+    </div>
+
+    <div class="mycont">
+        I am another container 
+    </div>
+</body>
+</html>
