@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and outlines - CSS</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 5px 5px greenyellow;
+        }
+        .textelement{
+            border: 2px solid black;
+            outline: 5px solid yellow;
+            /*The `border` affects element size and takes up space, while the `outline` does not affect size and overlaps the element without taking up space. */
+            outline-offset: 10px;
+            padding: 25px;
+            text-shadow: 2px 2px 4px green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a div
+    </div>
+
+    <p class="textelement">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati, numquam distinctio totam eos corporis rem modi vitae tempore nam ex exercitationem labore nesciunt impedit.
+    </p>
+</body>
+</html>

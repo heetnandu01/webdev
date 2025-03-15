@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: chartreuse;
+        }
+        .cpurple{
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+        <h2>the order of Specificity is</h2>
+        <p>Inline style > ID Selector > class of Attribute Selector > Element Selector > Universal Selector</p>
+    </div>
+</body>
+</html>

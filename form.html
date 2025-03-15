@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form to apply for backend engineer</h1>
+    <form action="post">
+        <!-- input tag will create the box 
+        and label tag provide the description for the input tag
+        -->
+        <!-- Div tag is used for creating a space between both the inputs gender and username -->
+        <div>
+            <label for="username">Enter your username : </label>
+        <input type="text" id="username"  name="username" placeholder="Enter your username" autofocus>
+        </div>
+
+        <input type="radio" id = "male"  name="gender" value="male">
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">female</label>
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea name="comment here" id="comment" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="grapes">Grapes</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
