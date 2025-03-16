@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable - CSS</title>
+    <style>
+        /* this are variable colors : --color and seccolor(secondary color) 
+        we can use this by using var(). inside that bracket we can put --color and seccolor. by using this can change colors of this and where ever this are called it can instantlu change them 
+        */
+
+        /* this are global variables which can change color of  entire website by changing below color variables */
+        :root{
+            --color:rgb(53, 245, 35);
+            --seccolor:rgb(111, 45, 242);
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color:var(--color);
+        }
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            list-style: none;
+            padding: 34px;
+            border: 2px solid var(--seccolor);
+        }
+        ul li:first-child{
+            --color:rgb(67, 248, 254);
+            background-color: var(--color,blue);
+        }
+      
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae minus deserunt ipsa similique ipsam! Distinctio corrupti harum facilis totam! Possimus minus obcaecati distinctio placeat eius dolorum quo magnam? Tempore et, illum omnis in illo eum officiis id dignissimos rem esse nisi! Reiciendis ab mollitia veniam?
+    </div>
+</body>
+</html>
