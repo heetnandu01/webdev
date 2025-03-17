@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear - CSS</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border:2px solid red;
+        }
+        img{
+            float: left;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            /* clear: right; */
+            clear: both;
+        }
+        /* clear means I do not want anything on the righthand side */
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img width="330px" src="https://imgs.search.brave.com/KDJAcVinATBpglgLbDUjc8ODecB196s91lIbIWoTHg8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzM4LzkyLzcw/LzM2MF9GXzgzODky/NzAxNl9PMHJEeU95/VUtLMDVhS0l0a0Nx/WGhYd1hqdTZHM2oz/NS5qcGc" alt="">
+        <div class="card">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab accusamus tempora odio, sunt recusandae vero? Ad esse voluptas aperiam pariatur rem ipsam, quaerat fugit labore, ipsum doloribus nihil, consequatur sed at tenetur aliquid dolorum.</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora esse labore minima omnis distinctio possimus, aliquid quam reprehenderit repudiandae asperiores optio dolor? Libero consectetur dicta facilis quis sint possimus eligendi eos veniam facere dolor maiores, sapiente, natus repellat eaque iusto illo corporis veritatis iure. Exercitationem numquam aspernatur accusantium inventore culpa ad dolorum non delectus fugit molestias eveniet, itaque explicabo enim sit quibusdam natus soluta temporibus saepe possimus placeat obcaecati aliquam. Repudiandae veniam saepe expedita earum, exercitationem accusantium minus nobis perferendis quaerat, sed, minima debitis fuga eaque quasi doloremque aspernatur laudantium explicabo voluptas esse atque? Corrupti quam eveniet odit ea commodi facere expedita natus vel ullam reiciendis, nesciunt, repudiandae earum porro, necessitatibus nulla nostrum. Quisquam iste dignissimos unde ipsa molestiae. Nihil repellendus, similique repudiandae sunt sed, consectetur voluptatum molestias modi incidunt ea quidem earum explicabo adipisci ipsum vitae excepturi molestiae. Officiis unde iste ullam animi ipsam molestias tenetur. Numquam, commodi facilis quas sit, quo assumenda ullam laborum eligendi at ab excepturi sint minima quaerat. Voluptate aspernatur odio laboriosam iste illum deleniti, hic blanditiis ratione sunt sint. In nisi obcaecati asperiores quos ducimus consequuntur sequi repudiandae exercitationem adipisci facere cumque tenetur inventore temporibus ipsa nihil, maxime ad minus sit omnis natus. Placeat veniam sit asperiores tenetur minus dolorum autem hic, cumque, quos maxime explicabo nemo et vel laboriosam eligendi ab! At quia eaque molestiae assumenda laboriosam praesentium dolorum tempore? Facilis, eveniet debitis laborum, aperiam velit maxime dicta repellat ea quo eaque nulla nobis aliquid fuga. Possimus eius natus porro magni incidunt corporis quos amet rem et. Impedit dolores blanditiis magnam, aliquid reprehenderit facilis quia tempora est provident veritatis fuga, neque, quisquam aliquam excepturi iste vitae voluptatem assumenda dolorem eos corporis! Autem iusto labore veniam facere illo assumenda vel, eveniet voluptate laboriosam amet vero reprehenderit distinctio? Iure veritatis harum iusto accusantium laborum perferendis maiores velit corporis blanditiis ea praesentium perspiciatis nemo aliquam deserunt, ut, neque beatae debitis similique ipsam saepe deleniti quod esse dolores tempore! Culpa earum fugiat eos deleniti. Soluta qui laboriosam officiis fugit?</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
