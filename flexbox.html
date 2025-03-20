@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - CSS</title>
+    <style>
+        .container{
+            border:2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content: center; */
+            /* this is just center the div at the top of the web page */
+            /* align-items: center;  */
+            /* this align-items will put this divs into center of the website  */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row;
+            /* whenever thing is overflowed in a div we should flex wrap to use it in next direction */
+            /* gap: 35px; */
+            /* row-gap: 40px;
+            column-gap: 30px; */
+            row-gap: 20px;
+            column-gap: 20px;
+            flex-wrap: wrap;
+            column-gap: 20px;
+        }
+
+        .item{
+            /* flex-grow: 1; */
+            height:50px;
+            width:40px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+            
+        }
+        .item1{
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+        }
+
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+</body>
+</html>
