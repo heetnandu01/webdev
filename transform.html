@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms - CSS </title>
+    <style>
+        .box{
+            height: 180px;
+            width: 180px;
+            background-color: yellowgreen;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.25turn); */
+            transform: rotate(0.125turn);
+            /* transform: rotateX(40deg); */
+            /* transform: rotateY(50deg); */
+            /* transform: rotateZ(45deg); */
+
+            /* transform: scale(1.4); */
+            /* transform: scaleX(2.2); */
+            /* transform: scaleY(2.5); */
+
+
+            /* transform: skewX(10deg);
+            transform: skewY(10deg); */
+
+            /* There is no Skew in z axis */
+
+            /* transform: translate(30px); */
+            /* transform: translateX(25px); */
+            /* transform: translateY(40px); */
+
+            /* For using Multiple Properties */
+            /* transform: translateY(100%) skewX(40deg) translateX(100%); */
+
+            transform-origin: -0% -0%;
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        
+        }
+
+        .container{
+            margin-top: 90px;
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid violet;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
