@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations - CSS</title>
+    <style>
+        .container{
+            background-color: gold;
+            height: 40vh;
+            width: 30vh;
+        }
+        .box{
+            width: 60px;
+            height: 60px;
+            /* animation-name:harry;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function:cubic-bezier(0, 0, 0, 0.98);
+            animation-delay: 1s;
+            animation-direction: reverse;
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state:paused;  */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation:harry 3s ease-in-out 1 forwards;
+        }
+
+        @keyframes harry{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: lime;
+                transform: translateX(650px);
+            }
+        }
+
+        /* You can have multiple keyframes or animations */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
