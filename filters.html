@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters - CSS</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 30px;
+        }
+        .img1{
+            filter: brightness(10px);
+            /* filter: contrast(200%); */
+            height: 450px;
+            width: 450px;
+        }
+
+        .img2{
+            /* filter: blur(7px); */
+            width: 450px;
+            filter: grayscale(100%);
+        }
+
+        .img3{
+            /* filter: brightness(100px); */
+            /* filter: grayscale(100%); */
+
+            /* sepia - vintage ish */
+            filter: sepia(50%); 
+            /* filter: invert(1); */
+            /* filter: opacity(60%); */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1"src="./images2/Space.webp" alt="">
+        <img class="img2"src="./images2/zoro.webp" alt="">
+        <img class="img3"src="./images2/kakashi.webp" alt="">
+    </div>
+</body>
+</html>

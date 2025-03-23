@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit and Object cover - CSS</title>
+    <style>
+      .container{
+        height: 466px;
+        width: 468px;
+        border: 2px solid black;
+        background-color: azure;
+        /* background-position: top right; */
+        /* background-position: center center; */
+
+        background-image: url("https://imgs.search.brave.com/GgP779oeu9CzYl_FdnRhsMPAo6rJDIHe9Sw33O8JL2M/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXVwc2NhbGVyLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NC8wNi9ncmVlbi1w/ZWFyLmpwZw");
+        background-repeat: no-repeat;
+      }  
+
+      img{
+        height: 466px;
+        width: 468px;
+        /* object-fit: cover; */
+        object-fit: contain;
+        /* object-fit: fill; */
+        object-position: 10px 20px;
+        /* object-fit: scale-down; */
+        /* 
+
+        main properties used
+
+        object-fit:cover
+        object-fit:fill
+        object-fit:contain
+
+        */
+        /* object-fit: cover;  */
+        /* object-position: top left; */
+        /* cover will cut out some part of the image and it will be in the container */
+        /* object-fit: contain; */
+        /* object-fit: fill; */
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./images2/room.webp" alt="">
+    </div>
+</body>
+</html>
