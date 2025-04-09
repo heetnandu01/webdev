@@ -69,12 +69,23 @@
         //     document.querySelector(".childContainer").style.background = getRandomColor();
         // },1000);
         // console.log(a)
+        
+        let d = setInterval(()=>{
+            document.querySelector(".container").style.background = getRandomColor();
+        },1000);
+        console.log(d);
 
 
-        let a = setTimeout(()=> {
+        let a = setInterval(()=> {
             document.querySelector(".childContainer").style.background = getRandomColor();
         },1000);
         console.log(a)
+
+
+        let c = setInterval(()=>{
+            document.querySelector(".child").style.background = getRandomColor();
+        },1000);
+        console.log(c);
         
     </script>
 </body>
