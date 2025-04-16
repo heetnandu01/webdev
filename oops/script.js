@@ -30,7 +30,14 @@ class Animal{
 }
 
 class lion extends Animal{
-    
+    constructor(name){
+        super(name)
+        console.log("Object is created...")
+    }
+    eats(){
+        super.eats()
+        console.log("he is eating the entire piece of chicken")
+    }
 }
 
 
@@ -39,11 +46,18 @@ class lion extends Animal{
 let a = new Animal("Bunny");
 console.log(a)
 
-let l = new lion("Harry");
-console.log(a)
+let L = new lion("shera");
+console.log(L)
 
 
+//Static method
 
+class Employee{
+    static smethod(){
+        alert("Hey");
+    }
+}
+Employee.smethod()
 
 
 
