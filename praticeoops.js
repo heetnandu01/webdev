@@ -91,7 +91,27 @@ class Bike extends vehicle{
 
 // 6) Prototype Chain
 
+const parent = {
+    walk:function(){
+        console.log("walks")
+    }
+}
 
+const child = {};
+child.__proto__ = parent;
 
+child.walk();
 
+// 6.1) another prototype problem
+
+const engine = {
+    start: function(){
+        console.log("Engine started")
+    }
+}
+
+const car = {}
+car.__proto__ = engine;
+
+car.start();
 
